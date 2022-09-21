@@ -1,0 +1,21 @@
+name: 'Test Repo CI/CD'
+on:
+  pull_request:
+    branches:
+      - 'main'
+jobs:
+  algosec-iac-connectivity-risk-analysis:
+    name: 'Algosec IAC Connectivity Risk Analysis'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connectivity Risk Analysis
+        uses: algosec/connectivity-risk-analysis-action@v0.0.15
+        env:
+          STOP_WHEN_FAIL: false
+          FIRST_RUN: true
+          CF_TENANT_ID: ${{ secrets.CF_TENANT_ID }}
+          CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
+          CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
