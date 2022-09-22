@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Connectivity Risk Analysis
-        uses: algosec/connectivity-risk-analysis-action@v0.0.15
+        uses: algosec/connectivity-risk-analysis-action@v0.0.19
         env:
           STOP_WHEN_FAIL: false
           FIRST_RUN: true
