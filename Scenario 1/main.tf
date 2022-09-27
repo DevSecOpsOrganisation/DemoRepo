@@ -2,8 +2,6 @@ provider "aws" {
   region     = "us-west-1"
 }
 
-
-
 resource "aws_security_group" "Scenario1" {
   name        = "SG with all port and all IP."
   description = "Ingress"

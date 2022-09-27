@@ -2,12 +2,12 @@ provider "aws" {
   region = "us-west-1"
 }
 
-resource "aws_security_group" "Scenario5" {
-  name        = "SG with Single port(UDP and TCP) and Multiple IP"
-  description = "Ingress"
+resource "aws_security_group" "Scenario13" {
+  name        = "Scenario13"
+  description = "egress"
   vpc_id      = "vpc-481b202f"
 
-  ingress {
+  egress {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -18,7 +18,7 @@ resource "aws_security_group" "Scenario5" {
       "192.168.0.0/16"
     ]
   }
-  ingress {
+  egress {
     from_port   = 22
     to_port     = 22
     protocol    = "udp"
@@ -29,11 +29,7 @@ resource "aws_security_group" "Scenario5" {
       "192.168.0.0/16"
     ]
   }
-
   tags = {
-    Name = "Scenario5"
+    Name = "SG with Single port(UDP and TCP) and Multiple IP"
   }
 }
-
-
-

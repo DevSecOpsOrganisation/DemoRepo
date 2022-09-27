@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Connectivity Risk Analysis
-        uses: algosec/connectivity-risk-analysis-action@v0.0.15
+        uses: algosec/connectivity-risk-analysis-action@v0.0.19
         env:
-          STOP_WHEN_FAIL: false
+          STOP_WHEN_FAIL: true
           FIRST_RUN: true
           CF_TENANT_ID: ${{ secrets.CF_TENANT_ID }}
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
