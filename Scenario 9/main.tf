@@ -15,7 +15,7 @@ resource "aws_security_group" "Scenario9" {
   }
 
   tags = {
-    Name = "SG with all port and all IP "
+    Name = "SG with all port and all IP"
   }
 }
 
