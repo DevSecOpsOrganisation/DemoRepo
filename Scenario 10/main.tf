@@ -11,14 +11,14 @@ resource "aws_security_group" "Scenario10" {
     from_port   = 25
     to_port     = 25
     protocol    = "tcp"
-    cidr_blocks = ["7.7.0.0/16"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
     from_port   = 25
     to_port     = 25
     protocol    = "udp"
-    cidr_blocks = ["7.7.0.0/16"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
     Name = "SG with Single port(UDP and TCP) and all IP."
