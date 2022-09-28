@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Scenario7" {
-  name        = "SG with Rule with ICMP protocol"
+  name        = "SG Rule with ICMP protocol"
   description = "Ingress"
   vpc_id      = "vpc-481b202f"
 
