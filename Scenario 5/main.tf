@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Scenario5" {
-  name        = "SG with Single port(UDP & TCP) and Multiple IP"
+  name        = "SG with Single port(UDP and TCP) and Multiple IP"
   description = "Ingress"
   vpc_id      = "vpc-481b202f"
 
