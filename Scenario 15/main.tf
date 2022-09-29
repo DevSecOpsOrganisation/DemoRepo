@@ -14,6 +14,6 @@ resource "aws_security_group" "Scenario15" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    Name = "SG with Rule with ICMP protocol"
+    Name = "SG with Rule with ICMP protocol "
   }
 }

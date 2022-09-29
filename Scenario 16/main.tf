@@ -16,6 +16,6 @@ resource "aws_security_group" "Scenario16" {
 
   }
   tags = {
-    Name = "SG with Rule with SG in source"
+    Name = "SG with Rule with SG in source "
   }
 }
