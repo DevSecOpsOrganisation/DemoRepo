@@ -8,15 +8,15 @@ resource "aws_security_group" "Scenario10" {
   vpc_id      = "vpc-481b202f"
 
   egress {
-    from_port   = 389
-    to_port     = 389
+    from_port   = 25
+    to_port     = 25
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
 
   egress {
-    from_port   = 389
-    to_port     = 389
+    from_port   = 25
+    to_port     = 25
     protocol    = "udp"
     cidr_blocks = ["0.0.0.0/0"]
   }
