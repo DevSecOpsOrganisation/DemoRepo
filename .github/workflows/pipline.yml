@@ -18,7 +18,10 @@ jobs:
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
           CF_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
           ######
-
+          ARM_SUBSCRIPTION_ID: ${{ secrets.AZ_SUBSCRIPTION_ID }}
+          ARM_TENANT_ID: ${{ secrets.AZ_TENANT_ID }}
+          ARM_CLIENT_ID: ${{ secrets.AZ_CLIENT_ID }}
+          ARM_CLIENT_SECRET: ${{ secrets.AZ_CLIENT_SECRET }}
           ######
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ######
