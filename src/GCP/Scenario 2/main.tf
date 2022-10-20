@@ -10,7 +10,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   allow {
     protocol = "udp"
     ports = [
-      "389"]
+      "380"]
   }
 
   description = "INGRESS"
