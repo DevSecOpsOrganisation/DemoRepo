@@ -8,11 +8,18 @@ jobs:
     name: 'Algosec IAC Connectivity Risk Analysis'
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v0.7.3
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
       - name: Connectivity Risk Analysis
         uses: algosec/connectivity-risk-analysis-action@v0.0.45
         env:
           STOP_WHEN_FAIL: true
           FULL_ANALYSIS: false
+          USE_CHECKOUT: true
           ######
           CF_TENANT_ID: ${{ secrets.CF_TENANT_ID }}
           CF_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
@@ -30,3 +37,4 @@ jobs:
           ######
           CF_API_URL: ${{ secrets.CF_API_URL }}
           CF_LOGIN_API: ${{ secrets.CF_LOGIN_API }}
+          #####
