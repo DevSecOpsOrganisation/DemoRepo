@@ -36,14 +36,5 @@ resource "google_compute_firewall" "i02-ni-gcp" {
     "0.0.0.0/0"
   ]
 
-  allow {
-    protocol = "tcp"
-    ports = [
-      "25-400",
-      "465", "587"]
-    direction = "EGRESS"
-    priority = "2200"
-    destination_ranges = [
-      "0.0.0.0/0"]
-  }
+
 }
