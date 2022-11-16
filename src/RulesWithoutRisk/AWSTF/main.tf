@@ -8,11 +8,11 @@ resource "aws_security_group" "Scenario8" {
   vpc_id      = "vpc-481b202f"
 
   ingress {
-    description     = "SSH"
-    from_port       = 32
-    to_port         = 33
-    protocol        = "tcp"
-    cidr_blocks = ["1.1.1.1/32"]
+    description = "SSH"
+    from_port   = 32
+    to_port     = 33
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
 
   }
 
