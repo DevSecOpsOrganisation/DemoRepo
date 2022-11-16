@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Scenario8" {
-  name        = "SG with Rule with SG in source"
+  name        = "SG without risk"
   description = "Ingress"
   vpc_id      = "vpc-481b202f"
 
