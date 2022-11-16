@@ -17,15 +17,17 @@ resource "google_compute_firewall" "i02-ni-gcp" {
 
   allow {
     protocol = "tcp"
-    ports = [
+    ports    = [
       "3020-3050",
-      "9000"]
+      "9000"
+    ]
   }
   allow {
     protocol = "udp"
-    ports = [
+    ports    = [
       "3020-3050",
-      "9000"]
+      "9000"
+    ]
   }
 
 
