@@ -5,7 +5,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   allow {
     protocol = "tcp"
     ports    = [
-      "23-24"
+      "30-30"
     ]
   }
 
@@ -13,7 +13,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   direction     = "INGRESS"
   priority      = 1100
   source_ranges = [
-    "1.1.1.1/32"
+    "10.10.10.10/32"
   ]
 
 
