@@ -5,13 +5,13 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   allow {
     protocol = "tcp"
     ports    = [
-      "389"
+      "22"
     ]
   }
   allow {
     protocol = "udp"
     ports    = [
-      "380"
+      "22"
     ]
   }
 
@@ -19,7 +19,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   direction     = "INGRESS"
   priority      = 1100
   source_ranges = [
-    "0.0.0.0/0"
+    "1.1.1.1/32"
   ]
 
 
