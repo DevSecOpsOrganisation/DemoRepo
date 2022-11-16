@@ -1,5 +1,5 @@
 resource "google_compute_firewall" "i02-ni-gcp" {
-  name    = "devsecops fw single port"
+  name    = "devsecops"
   network = "devsecops-network-gcp"
 
   allow {
