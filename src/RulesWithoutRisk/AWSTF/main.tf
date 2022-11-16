@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "us-west-1"
+}
+
 resource "aws_security_group" "Scenario8" {
   name        = "SG with Rule with SG in source"
   description = "Ingress"
