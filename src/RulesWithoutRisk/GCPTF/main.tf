@@ -3,13 +3,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   network = "devsecops-network-gcp"
 
   allow {
-    protocol = "tcp"
-    ports    = [
-      "22"
-    ]
-  }
-  allow {
-    protocol = "udp"
+    protocol = "all"
     ports    = [
       "22"
     ]
