@@ -1,13 +1,26 @@
-resource "google_compute_firewall" "o03-ni-gcp" {
-  name = "devsecops-fw-single-ip-egress"
+resource "google_compute_firewall" "i02-ni-gcp" {
+  name    = "devsecops-fw-single-port"
   network = "devsecops-network-gcp"
 
   allow {
+    protocol = "tcp"
+    ports    = [
+      "389"
+    ]
+  }
+  allow {
     protocol = "udp"
+    ports    = [
+      "380"
+    ]
   }
 
-  direction = "INGRESS"
-  priority = "2300"
-  destination_ranges = [
-    "192.168.1.1/32"]
+  description   = "INGRESS"
+  direction     = "INGRESS"
+  priority      = 1100
+  source_ranges = [
+    "0.0.0.0/0"
+  ]
+
+
 }
