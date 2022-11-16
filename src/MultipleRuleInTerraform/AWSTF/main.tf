@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_security_group" "Scenario111" {
   name        = "SG multiple rules"
-  description = "SG with multiple rules"
+  description = "SG with multiple rule"
   vpc_id      = "vpc-481b202f"
 
   ingress {
