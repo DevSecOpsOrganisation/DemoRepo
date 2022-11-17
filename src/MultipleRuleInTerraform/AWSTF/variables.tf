@@ -1,7 +1,7 @@
 variable "allowed_ips" {
   description = "Defines ip CIDR blocks for Security groups"
   type        = list(string)
-  default     = ["0.0.0.0/0"]
+  default     = ["192.168.0.0/32"]
 }
 
 variable "vpc_id" {
