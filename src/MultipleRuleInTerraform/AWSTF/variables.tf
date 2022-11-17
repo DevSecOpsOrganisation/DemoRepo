@@ -1,9 +1,14 @@
-variable "allowed_ips" {
-  description = "Defines ip CIDR blocks for Security groups"
+variable "all_ips" {
+  description = "CIDR block for all Ip"
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
 
+variable "private_ip" {
+  description = "CIDR block for a private IP"
+  type        = list(string)
+  default     = ["192.168.10.10/32"]
+}
 variable "vpc_id" {
   description = "Default vpc id used to create Security group"
   default     = "vpc-481b202f"
