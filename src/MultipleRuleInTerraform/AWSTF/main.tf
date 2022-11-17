@@ -29,14 +29,14 @@ resource "aws_security_group" "Scenario111" {
 
   egress {
     from_port   = 0
-    to_port     = 65535
+    to_port     = 1
     protocol    = var.tcp_protocol
     cidr_blocks = var.allowed_ips
   }
 
   egress {
     from_port   = 0
-    to_port     = 65535
+    to_port     = 1
     protocol    = var.udp_protocol
     cidr_blocks = var.allowed_ips
   }
