@@ -10,7 +10,7 @@ resource "aws_security_group" "Scenario111" {
   ingress {
     from_port   = 0
     to_port     = 0
-    protocol    = var.all_protocol
+    protocol    = var.tcp_protocol
     cidr_blocks = var.allowed_ips
   }
   ingress {
@@ -23,21 +23,21 @@ resource "aws_security_group" "Scenario111" {
   ingress {
     from_port   = 389
     to_port     = 389
-    protocol    = "udp"
+    protocol    = var.udp_protocol
     cidr_blocks = var.allowed_ips
   }
 
   egress {
     from_port   = 0
     to_port     = 65535
-    protocol    = "tcp"
+    protocol    = var.tcp_protocol
     cidr_blocks = var.allowed_ips
   }
 
   egress {
     from_port   = 0
     to_port     = 65535
-    protocol    = "udp"
+    protocol    = var.udp_protocol
     cidr_blocks = var.allowed_ips
   }
 
