@@ -17,28 +17,28 @@ resource "aws_security_group" "Scenario111" {
     from_port   = 389
     to_port     = 389
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_ips
   }
 
   ingress {
     from_port   = 389
     to_port     = 389
     protocol    = "udp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_ips
   }
 
   egress {
     from_port   = 0
     to_port     = 65535
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_ips
   }
 
   egress {
     from_port   = 0
     to_port     = 65535
     protocol    = "udp"
-    cidr_blocks = ["0.0.0.0/0"]
+    cidr_blocks = var.allowed_ips
   }
 
   tags = {
