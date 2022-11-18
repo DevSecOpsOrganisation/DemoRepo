@@ -3,6 +3,7 @@ variable "all_ips" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
+
 variable "region" {
   description = "region used while creating SG"
   default     = "us-west-1"
@@ -11,7 +12,7 @@ variable "region" {
 variable "private_ip" {
   description = "CIDR block for a private IP"
   type        = list(string)
-  default     = ["192.168.10.10/32"]
+  default     = ["192.168.10.11/32"]
 }
 variable "vpc_id" {
   description = "Default vpc id used to create Security group"
