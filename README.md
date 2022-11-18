@@ -1,4 +1,4 @@
-PR created with this branch to main branch will perform devSecOps analysis on following folders:
+PR created from this branch to the main branch will perform devSecOps analysis on the following folders:
 
 src/MultipleRuleInTerraform/AWSTF
 
@@ -24,22 +24,22 @@ I07-I-NSG
 
 I25-I-NSG
 
-To eliminate any risk from rules please read "Recommendation" for the risk and then perform the step accordingly
+To eliminate any risk from the rules please read "Recommendation" for the risk and then perform the step accordingly
 
-for e.g.
+e.g.
 
 Rule:
 
 -----------------------
-Vendor:       AWS
+Vendor: AWS
 
-From Port:    0
+From Port: 0
 
-To Port:      0
+To Port: 0
 
 Ip Protocol: -1
 
-Ip Range:    0.0.0.0/0
+Ip Range: 0.0.0.0/0
 
 -------------------------------
 
@@ -50,6 +50,5 @@ Recommendation: Restrict the rules to refer to only the source IPs and services 
 Steps to perform:
 
 Change the Ip Protocol to be specific for e.g. tcp
-Change the Ip Range to be specific ip for e.g. "192.168.10.11/32"
 
-
+Change the Ip Range to be specific IP e.g. "192.168.10.11/32"
