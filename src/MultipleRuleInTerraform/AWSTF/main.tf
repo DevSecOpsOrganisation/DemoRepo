@@ -1,5 +1,5 @@
 provider "aws" {
-  region     = "us-west-1"
+  region     = var.region
 }
 
 resource "aws_security_group" "Scenario111" {

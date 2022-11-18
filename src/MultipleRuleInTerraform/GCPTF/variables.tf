@@ -4,32 +4,23 @@ variable "all_ips" {
   default     = ["0.0.0.0/0"]
 }
 
-variable "region" {
-  description = "region used while creating SG"
-  default     = "us-west-1"
-}
-
 variable "private_ip" {
   description = "CIDR block for a private IP"
   type        = list(string)
-  default     = ["1.1.1.1/32"]
-}
-variable "vpc_id" {
-  description = "Default vpc id used to create Security group"
-  default     = "vpc-481b202f"
+  default     = ["192.168.10.10/32"]
 }
 
 variable "all_protocol" {
   description = "String value used for all protocol"
-  default     = "-1"
+  default     = "*"
 }
 
 variable "tcp_protocol" {
   description = "String value used for tcp protocol"
-  default     = "tcp"
+  default     = "Tcp"
 }
 
 variable "udp_protocol" {
   description = "String value used for udp protocol"
-  default     = "udp"
+  default     = "Udp"
 }
