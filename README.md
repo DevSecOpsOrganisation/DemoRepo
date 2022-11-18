@@ -24,7 +24,7 @@ I07-I-NSG
 
 I25-I-NSG
 
-To eliminate any risk from the rules please read "Recommendation" for the risk and then perform the step accordingly
+>To eliminate any risk from the rules please read "Recommendation" for the risk and then perform the step accordingly
 
 *e.g.*
 
@@ -49,6 +49,6 @@ Ip Range: 0.0.0.0/0
 
 **Steps to perform:**
 
-Change the Ip Protocol to be specific for e.g. tcp(var.tcp_protocol)
+>Change the Ip Protocol to be specific for e.g. tcp(var.tcp_protocol)
 
-Change the Ip Range to be specific IP e.g. "192.168.10.11/32"(var.private_ip)
+>Change the Ip Range to be specific IP e.g. "192.168.10.11/32"(var.private_ip)
