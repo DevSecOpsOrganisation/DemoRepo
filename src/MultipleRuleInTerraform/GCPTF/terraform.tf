@@ -3,7 +3,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   network = "devsecops-network-gcp"
 
   allow {
-    protocol = "tcp"
+    protocol = var.tcp_protocol
     ports    = [
       "389"
     ]
@@ -16,7 +16,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   }
 
   allow {
-    protocol = "tcp"
+    protocol = var.tcp_protocol
     ports    = [
       "3020-3050",
       "9000"

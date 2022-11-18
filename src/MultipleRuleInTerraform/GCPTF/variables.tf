@@ -17,10 +17,10 @@ variable "all_protocol" {
 
 variable "tcp_protocol" {
   description = "String value used for tcp protocol"
-  default     = "Tcp"
+  default     = "tcp"
 }
 
 variable "udp_protocol" {
   description = "String value used for udp protocol"
-  default     = "Udp"
+  default     = "udp"
 }
