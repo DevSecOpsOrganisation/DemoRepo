@@ -4,6 +4,6 @@ Please refer to branch specific readme file for more information.
 
 Branch:
 
-RulesWithRisk - Perform analysis on rules that have risk
+RulesWithRisk - Performs analysis on rules that have risk
 
-RulesWithoutRisk - Perform analysis on rules that don't have risk
+RulesWithoutRisk - Performs analysis on rules that don't have risk
