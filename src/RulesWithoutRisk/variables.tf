@@ -12,7 +12,7 @@ variable "region" {
 variable "private_ip" {
   description = "CIDR block for a private IP"
   type        = list(string)
-  default     = ["1.1.1.1/32"]
+  default     = ["1.1.1.2/32"]
 }
 variable "vpc_id" {
   description = "Default vpc id used to create Security group"
