@@ -3,7 +3,6 @@ variable "all_ips" {
   type        = list(string)
   default     = ["0.0.0.0/0"]
 }
-
 variable "region" {
   description = "region used while creating SG"
   default     = "us-west-1"

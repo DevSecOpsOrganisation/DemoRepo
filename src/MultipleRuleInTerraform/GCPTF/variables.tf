@@ -9,7 +9,6 @@ variable "private_ip" {
   type        = list(string)
   default     = ["192.168.10.10/32"]
 }
-
 variable "all_protocol" {
   description = "String value used for all protocol"
   default     = "*"
