@@ -11,8 +11,8 @@ resource "aws_security_group" "Scenario8" {
     description = "SSH"
     from_port   = 32
     to_port     = 33
-    protocol    = var.tcp_protocol
-    cidr_blocks = var.private_ip
+    protocol    = var.all_protocol
+    cidr_blocks = var.all_ips
 
   }
 
