@@ -36,7 +36,7 @@ resource "aws_security_group" "Scenario111" {
 
   egress {
     from_port   = 0
-    to_port     = 200
+    to_port     = 1000
     protocol    = var.udp_protocol
     cidr_blocks = var.private_ip
   }
