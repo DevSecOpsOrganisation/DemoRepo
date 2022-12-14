@@ -1,9 +1,9 @@
-This is a demo repo for devSecOps created to perform risk analysis on terraform files.
+PR created from this branch to the main branch will perform devSecOps analysis on the following folders:
 
-Please refer to branch specific readme file for more information.
+src/RulesWithoutRisk
 
-Branch:
+**No expected risk**
 
-RulesWithRisk - Performs analysis on rules that have risk
+>To introduce risk in above folder, change Ip Protocol value to "-1"(var.all_protocol)
 
-RulesWithoutRisk - Performs analysis on rules that don't have risk
+>Expected risk after change: **I04-I-SG**
