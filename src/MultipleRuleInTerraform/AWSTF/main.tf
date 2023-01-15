@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "Scenario111" {
-  name        = "SG multiple rules"
+  name        = "SG multiple rules Vitaly"
   description = "SG with multiple rules"
   vpc_id      = var.vpc_id
 
