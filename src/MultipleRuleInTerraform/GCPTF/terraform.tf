@@ -1,10 +1,5 @@
-terraform {
-    google = {
-      source  = "hashicorp/google"
-      version = "4.31.0"
-    }
-  }
-}
+provider "google" {}
+
 resource "google_compute_firewall" "i02-ni-gcp" {
   name    = "devsecops-fw-single-port"
   network = "devsecops-network-gcp"
