@@ -11,7 +11,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   allow {
     protocol = var.udp_protocol
     ports    = [
-      "380"
+      "0-380"
     ]
   }
 
