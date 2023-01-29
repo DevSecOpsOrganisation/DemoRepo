@@ -38,7 +38,7 @@ resource "aws_security_group" "Scenario111" {
     from_port   = 0
     to_port     = 65535
     protocol    = var.udp_protocol
-    cidr_blocks = var.private.ip
+    cidr_blocks = var.private_ip
   }
 
   tags = {
