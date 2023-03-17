@@ -9,8 +9,8 @@ resource "aws_security_group" "Scenario8" {
 
   ingress {
     description = "SSH"
-    from_port   = 32
-    to_port     = 33
+    from_port   = 0
+    to_port     = 65535
     protocol    = var.all_protocol
     cidr_blocks = var.private_ip
 
