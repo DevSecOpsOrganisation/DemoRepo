@@ -10,7 +10,7 @@ resource "aws_security_group" "Scenario111" {
   ingress {
     from_port   = 0
     to_port     = 0
-    protocol    = var.all_protocol
+    protocol    = var.tcp_protocol
     cidr_blocks = var.all_ips
   }
   ingress {
