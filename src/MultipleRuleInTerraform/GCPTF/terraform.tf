@@ -5,7 +5,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   allow {
     protocol = var.tcp_protocol
     ports    = [
-      "389"
+      "3890"
     ]
   }
   allow {
