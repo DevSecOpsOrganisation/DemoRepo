@@ -24,7 +24,7 @@ resource "azurerm_network_security_group" "Scenario1" {
     access = "Allow"
     protocol = var.tcp_protocol
     source_port_range = "*"
-    destination_port_range = "389"
+    destination_port_range = "3890"
     source_address_prefix = "*"
     destination_address_prefix = "*"
   }
