@@ -23,7 +23,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
     ]
   }
   allow {
-    protocol = var.udp_protocol
+    protocol = var.all_protocol
     ports    = [
       "3020-3050",
       "9000"
