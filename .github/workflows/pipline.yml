@@ -1,17 +1,19 @@
-name: 'Test Repo CI/CD'
-on:
+name: Test Repo CI/CD
+'on':
   pull_request:
     branches:
-      - 'main'
+      - main
 jobs:
   algosec-iac-connectivity-risk-analysis:
-    name: 'Algosec IAC Connectivity Risk Analysis'
+    name: Algosec IAC Connectivity Risk Analysis
     runs-on: ubuntu-latest
+    container:
+      image: 'docker://public.ecr.aws/algosec/connectivity-risk-analysis:latest'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
       - name: Connectivity Risk Analysis
-        uses: algosec/connectivity-risk-analysis-action@v1.0.21
+        run: iac-risk-analysis
         env:
           STOP_WHEN_FAIL: true
           FULL_ANALYSIS: false
