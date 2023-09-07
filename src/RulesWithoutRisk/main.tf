@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-resource "aws_security_group" "Scenario8" {
+resource "aws_security_group" "Scenario81" {
   name        = "SG without risk"
   description = "Ingress"
   vpc_id      = var.vpc_id
