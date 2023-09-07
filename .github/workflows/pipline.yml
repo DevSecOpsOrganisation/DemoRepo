@@ -8,7 +8,7 @@ jobs:
     name: Algosec IAC Connectivity Risk Analysis
     runs-on: ubuntu-latest
     container:
-      image: 'docker://public.ecr.aws/algosec/devsecops-action_dev:latest'
+      image: 'docker://384719937521.dkr.ecr.us-east-1.amazonaws.com/devsecops-action_dev:latest'
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
