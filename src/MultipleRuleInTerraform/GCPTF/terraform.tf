@@ -35,4 +35,6 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   direction     = "INGRESS"
   priority      = 1100
   source_ranges = var.all_ips
+
+
 }
