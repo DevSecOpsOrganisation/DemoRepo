@@ -21,7 +21,7 @@ variable "vpc_id" {
 
 variable "all_protocol" {
   description = "String value used for all protocol"
-  default     = "tcp"
+  default     = "udp"
 }
 
 variable "tcp_protocol" {
