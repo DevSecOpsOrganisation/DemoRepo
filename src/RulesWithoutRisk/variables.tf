@@ -33,3 +33,8 @@ variable "udp_protocol" {
   description = "String value used for udp protocol"
   default     = "udp"
 }
+
+variable "icmp_protocol" {
+  description = "String value used for icmp protocol"
+  default     = "ICMP"
+}
