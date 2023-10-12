@@ -1,5 +1,5 @@
 variable "vpc_id" {
-  description = "Default vpc id used to create Security group"
+  description = "Default vpc id used to create Security group "
   default     = "vpc-481b202f"
 }
 
