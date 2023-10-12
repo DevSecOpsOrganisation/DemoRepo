@@ -1,5 +1,5 @@
 resource "google_compute_firewall" "i02-ni-gcp" {
-  name    = "devsecops-fw-single-port"
+  name    = "devsecops-fw-single-port "
   network = "devsecops-network-gcp"
 
   allow {
@@ -35,6 +35,4 @@ resource "google_compute_firewall" "i02-ni-gcp" {
   direction     = "INGRESS"
   priority      = 1100
   source_ranges = var.all_ips
-
-
 }
