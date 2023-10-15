@@ -9,7 +9,7 @@ resource "aws_security_group" "Scenario111" {
 
   ingress {
     from_port   = 0
-    to_port     = 0
+    to_port     = 65535
     protocol    = var.all_protocol
     cidr_blocks = var.all_ips
   }
@@ -29,7 +29,7 @@ resource "aws_security_group" "Scenario111" {
 
   egress {
     from_port   = 0
-    to_port     = 65535
+    to_port     = 0
     protocol    = var.tcp_protocol
     cidr_blocks = var.all_ips
   }
