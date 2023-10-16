@@ -9,7 +9,7 @@ resource "google_compute_firewall" "i02-ni-gcp" {
     ]
   }
   allow {
-    protocol = var.all_protocol
+    protocol = var.tcp_protocol
     ports    = [
       "380"
     ]
