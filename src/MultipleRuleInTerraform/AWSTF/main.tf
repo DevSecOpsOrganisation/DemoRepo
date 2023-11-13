@@ -8,8 +8,8 @@ resource "aws_security_group" "Scenario111" {
   vpc_id      = var.vpc_id
 
   ingress {
-    from_port   = 0
-    to_port     = 65535
+    from_port   = 389
+    to_port     = 389
     protocol    = var.all_protocol
     cidr_blocks = var.all_ips
   }
