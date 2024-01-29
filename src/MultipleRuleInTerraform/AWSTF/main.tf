@@ -11,7 +11,7 @@ resource "aws_security_group" "Scenario111" {
     from_port   = 0
     to_port     = 443
     protocol    = var.all_protocol
-    cidr_blocks = var.privat_ip
+    cidr_blocks = var.private_ip
   }
   ingress {
     from_port   = 389
