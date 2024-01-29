@@ -10,9 +10,9 @@ resource "azurerm_network_security_group" "Scenario1" {
     priority                   = 110
     direction                  = "Inbound"
     access                     = "Allow"
-    protocol                   = var.all_protocol
+    protocol                   = var.udp_protocol
     source_port_range          = "*"
-    destination_port_range     = "*"
+    destination_port_range     = "443"
     source_address_prefix      = "*"
     destination_address_prefix = "*"
   }
