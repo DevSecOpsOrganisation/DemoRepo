@@ -4,6 +4,11 @@ variable "all_ips" {
   default     = ["0.0.0.0/0"]
 }
 
+variable "single_private" {
+  description = "CIDR block for all Ip"
+  type        = list(string)
+  default     = ["192.168.10.10/32"]
+}
 variable "region" {
   description = "region used while creating SG"
   default     = "us-west-1"
